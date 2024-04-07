@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8FF8DB8A-A7DF-422F-AEEB-7700A31518D7}|DoAnDBMS\\DoAnDBMS.csproj|c:\\users\\thanh\\onedrive\\desktop\\ute\\n\u0103m 2\\hk 2\\h\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0111\u1ED3 \u00E1n\\doandbms\\doandbms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FF8DB8A-A7DF-422F-AEEB-7700A31518D7}|DoAnDBMS\\DoAnDBMS.csproj|solutionrelative:doandbms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FF8DB8A-A7DF-422F-AEEB-7700A31518D7}|DoAnDBMS\\DoAnDBMS.csproj|C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\doandbms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8FF8DB8A-A7DF-422F-AEEB-7700A31518D7}|DoAnDBMS\\DoAnDBMS.csproj|solutionrelative:doandbms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FF8DB8A-A7DF-422F-AEEB-7700A31518D7}|DoAnDBMS\\DoAnDBMS.csproj|C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\doandbms\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FF8DB8A-A7DF-422F-AEEB-7700A31518D7}|DoAnDBMS\\DoAnDBMS.csproj|solutionrelative:doandbms\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 388,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\DoAnDBMS\\Form1.cs",
+              "RelativeDocumentMoniker": "DoAnDBMS\\Form1.cs",
+              "ToolTip": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\DoAnDBMS\\Form1.cs",
+              "RelativeToolTip": "DoAnDBMS\\Form1.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T12:33:19.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\DoAnDBMS\\DBConnection.cs",
+              "RelativeDocumentMoniker": "DoAnDBMS\\DBConnection.cs",
+              "ToolTip": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\DoAnDBMS\\DBConnection.cs",
+              "RelativeToolTip": "DoAnDBMS\\DBConnection.cs",
+              "ViewState": "AQIAADgBAAAAAAAAAAAAwE0BAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T12:27:52.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\DoAnDBMS\\Form1.cs",
+              "RelativeDocumentMoniker": "DoAnDBMS\\Form1.cs",
+              "ToolTip": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\N\u0103m 2\\HK 2\\H\u1EC7 qu\u1EA3n tr\u1ECB c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\\u0110\u1ED3 \u00E1n\\DoAnDBMS\\DoAnDBMS\\Form1.cs [Design]",
+              "RelativeToolTip": "DoAnDBMS\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T12:25:47.566Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
