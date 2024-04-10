@@ -39,6 +39,8 @@
             btnViewNSX = new Button();
             btnTimNL = new Button();
             btnTimSP = new Button();
+            btnProduct = new NewButton();
+            btnMenu = new NewButton();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -151,11 +153,51 @@
             btnTimSP.UseVisualStyleBackColor = true;
             btnTimSP.Click += btnTimSP_Click;
             // 
+            // btnProduct
+            // 
+            btnProduct.BackColor = Color.MediumSlateBlue;
+            btnProduct.BackgroundColor = Color.MediumSlateBlue;
+            btnProduct.BorderColor = Color.PaleVioletRed;
+            btnProduct.BorderRadius = 0;
+            btnProduct.BorderSize = 0;
+            btnProduct.FlatAppearance.BorderSize = 0;
+            btnProduct.FlatStyle = FlatStyle.Flat;
+            btnProduct.ForeColor = Color.White;
+            btnProduct.Location = new Point(391, 301);
+            btnProduct.Name = "btnProduct";
+            btnProduct.Size = new Size(150, 40);
+            btnProduct.TabIndex = 13;
+            btnProduct.Text = "Quản lý sản phẩm";
+            btnProduct.TextColor = Color.White;
+            btnProduct.UseVisualStyleBackColor = false;
+            btnProduct.Click += btnProduct_Click;
+            // 
+            // btnMenu
+            // 
+            btnMenu.BackColor = Color.MediumSlateBlue;
+            btnMenu.BackgroundColor = Color.MediumSlateBlue;
+            btnMenu.BorderColor = Color.PaleVioletRed;
+            btnMenu.BorderRadius = 0;
+            btnMenu.BorderSize = 0;
+            btnMenu.FlatAppearance.BorderSize = 0;
+            btnMenu.FlatStyle = FlatStyle.Flat;
+            btnMenu.ForeColor = Color.White;
+            btnMenu.Location = new Point(391, 248);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(150, 40);
+            btnMenu.TabIndex = 14;
+            btnMenu.Text = "Menu";
+            btnMenu.TextColor = Color.White;
+            btnMenu.UseVisualStyleBackColor = false;
+            btnMenu.Click += btnMenu_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 519);
+            Controls.Add(btnMenu);
+            Controls.Add(btnProduct);
             Controls.Add(btnTimSP);
             Controls.Add(btnTimNL);
             Controls.Add(btnViewNSX);
@@ -188,5 +230,7 @@
         private Button btnViewNSX;
         private Button btnTimNL;
         private Button btnTimSP;
+        private NewButton btnProduct;
+        private NewButton btnMenu;
     }
 }

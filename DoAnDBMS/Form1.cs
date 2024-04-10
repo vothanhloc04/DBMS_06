@@ -60,5 +60,17 @@ namespace DoAnDBMS
         {
             dataGridView1.DataSource = db.dmNhanVien();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            FTestMenu fTestMenu = new FTestMenu();
+            fTestMenu.ShowDialog();
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            FTest fTest = new FTest();
+            fTest.ShowDialog();
+        }
     }
 }

@@ -23,3 +23,10 @@ C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ 
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.csproj.AssemblyReference.cache
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.csproj.Up2Date
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.MenuSP.resources
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.sourcelink.json
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.Product.resources
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.Properties.Resources.resources
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.FTestMenu.resources
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.FTest.resources
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.UCAddSP.resources

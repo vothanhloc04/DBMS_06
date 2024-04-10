@@ -252,7 +252,7 @@ namespace DoAnDBMS
         }
 
         //7.1
-        public void themSanPham(string MaSP, string MaNhomSP, string TenSP, string TenNhomSP, float DonGia, string TinhTrang, Image HinhAnh)
+        public void themSanPham(string MaSP, string MaNhomSP, string TenSP, string TenNhomSP, float DonGia, string TinhTrang, byte[] HinhAnh)
         {
             try
             {
@@ -266,7 +266,15 @@ namespace DoAnDBMS
                 cmd.Parameters.Add("@TenNhomSP", SqlDbType.NVarChar).Value = TenNhomSP;
                 cmd.Parameters.Add("@DonGia", SqlDbType.Float).Value = DonGia;
                 cmd.Parameters.Add("@TinhTrang", SqlDbType.NVarChar).Value = TinhTrang;
-                cmd.Parameters.Add("@HinhAnh", SqlDbType.Image).Value = HinhAnh;
+                cmd.Parameters.Add("@HinhAnh", SqlDbType.Binary).Value = HinhAnh;
+                if(cmd.ExecuteNonQuery() > 0)
+                {
+                    MessageBox.Show("Luu thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("That bai");
+                }
             }
             catch
             {
@@ -279,7 +287,7 @@ namespace DoAnDBMS
         }
 
         //7.2
-        public void suaSanPham(string MaSP, string TenSP, float DonGia, string TinhTrang, Image HinhAnh)
+        public void suaSanPham(string MaSP, string TenSP, float DonGia, string TinhTrang, byte[] HinhAnh)
         {
             try
             {
@@ -291,7 +299,15 @@ namespace DoAnDBMS
                 cmd.Parameters.Add("@TenSP", SqlDbType.NVarChar).Value = TenSP;
                 cmd.Parameters.Add("@DonGia", SqlDbType.Float).Value = DonGia;
                 cmd.Parameters.Add("@TinhTrang", SqlDbType.NVarChar).Value = TinhTrang;
-                cmd.Parameters.Add("@HinhAnh", SqlDbType.Image).Value = HinhAnh;
+                cmd.Parameters.Add("@HinhAnh", SqlDbType.Binary).Value = HinhAnh;
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    MessageBox.Show("Luu thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("That bai");
+                }
             }
             catch
             {
@@ -309,10 +325,19 @@ namespace DoAnDBMS
             try
             {
                 conn.Open();
-                string sqlStr = "proc_XoaSanPhamMoi";
+                string sqlStr = "proc_XoaSanPham";
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@MaSP", SqlDbType.NChar).Value = MaSP;
+
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    MessageBox.Show("Xoa thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("That bai");
+                }
             }
             catch
             {
