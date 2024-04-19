@@ -28,26 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menusp1 = new MenuSP();
+            ucHomenv1 = new UCHomeNV();
             SuspendLayout();
             // 
-            // menusp1
+            // ucHomenv1
             // 
-            menusp1.BackColor = Color.Firebrick;
-            menusp1.Dock = DockStyle.Fill;
-            menusp1.Location = new Point(0, 0);
-            menusp1.Name = "menusp1";
-            menusp1.Size = new Size(697, 614);
-            menusp1.TabIndex = 0;
+            ucHomenv1.BackColor = Color.WhiteSmoke;
+            ucHomenv1.Location = new Point(121, 0);
+            ucHomenv1.Name = "ucHomenv1";
+            ucHomenv1.Size = new Size(901, 769);
+            ucHomenv1.TabIndex = 0;
             // 
-            // FTestMenucs
+            // FTestMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(697, 614);
-            Controls.Add(menusp1);
+            ClientSize = new Size(1023, 764);
+            Controls.Add(ucHomenv1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "FTestMenucs";
+            Name = "FTestMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
             ResumeLayout(false);
@@ -55,6 +54,6 @@
 
         #endregion
 
-        private MenuSP menusp1;
+        private UCHomeNV ucHomenv1;
     }
 }

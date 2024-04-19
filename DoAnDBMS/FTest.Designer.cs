@@ -34,18 +34,20 @@
             // ucAddsp1
             // 
             ucAddsp1.BackColor = SystemColors.ControlLightLight;
-            ucAddsp1.Location = new Point(0, 0);
+            ucAddsp1.Location = new Point(-2, 0);
+            ucAddsp1.Margin = new Padding(3, 4, 3, 4);
             ucAddsp1.Name = "ucAddsp1";
-            ucAddsp1.Size = new Size(698, 528);
+            ucAddsp1.Size = new Size(1186, 666);
             ucAddsp1.TabIndex = 0;
             // 
             // FTest
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(699, 529);
+            ClientSize = new Size(1183, 532);
             Controls.Add(ucAddsp1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FTest";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Quản lý sản phẩm";

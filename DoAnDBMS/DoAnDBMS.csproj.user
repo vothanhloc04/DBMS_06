@@ -22,5 +22,8 @@
     <Compile Update="UCAddSP.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UCHomeNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

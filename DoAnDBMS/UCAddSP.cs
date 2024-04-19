@@ -74,5 +74,15 @@ namespace DoAnDBMS
         {
             db.suaSanPham(tbMaSP.Text, tbTenSP.Text, (float)Convert.ToDouble(tbDonGia.Text), cbbTinhTrang.Text, convertImageToBytes());
         }
+
+        private void UCAddSP_Load(object sender, EventArgs e)
+        {
+            dgvProList.DataSource = db.dmSanPham();
+        }
+
+        private void dgvProList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

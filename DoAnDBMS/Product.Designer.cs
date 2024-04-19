@@ -32,6 +32,7 @@
             pbProduct = new PictureBox();
             lblNameProduct = new Label();
             lblPrice = new Label();
+            pnlAdd = new Panel();
             ((System.ComponentModel.ISupportInitialize)pbProduct).BeginInit();
             SuspendLayout();
             // 
@@ -60,17 +61,27 @@
             // 
             lblPrice.AutoSize = true;
             lblPrice.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPrice.Location = new Point(3, 159);
+            lblPrice.Location = new Point(3, 160);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(24, 15);
             lblPrice.TabIndex = 2;
             lblPrice.Text = "Gia";
+            // 
+            // pnlAdd
+            // 
+            pnlAdd.BackgroundImage = (Image)resources.GetObject("pnlAdd.BackgroundImage");
+            pnlAdd.BackgroundImageLayout = ImageLayout.Center;
+            pnlAdd.Location = new Point(78, 146);
+            pnlAdd.Name = "pnlAdd";
+            pnlAdd.Size = new Size(48, 38);
+            pnlAdd.TabIndex = 3;
             // 
             // Product
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
+            Controls.Add(pnlAdd);
             Controls.Add(lblPrice);
             Controls.Add(lblNameProduct);
             Controls.Add(pbProduct);
@@ -86,5 +97,6 @@
         private PictureBox pbProduct;
         private Label lblNameProduct;
         private Label lblPrice;
+        private Panel pnlAdd;
     }
 }

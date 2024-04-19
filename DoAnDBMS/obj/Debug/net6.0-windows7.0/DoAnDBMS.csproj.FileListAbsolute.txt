@@ -30,3 +30,4 @@ C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ 
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.FTestMenu.resources
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.FTest.resources
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.UCAddSP.resources
+C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.UCHomeNV.resources

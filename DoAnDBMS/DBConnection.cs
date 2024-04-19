@@ -91,7 +91,7 @@ namespace DoAnDBMS
             try
             {
                 conn.Open();
-                string sqlStr = "Select * From v_dmSanPham";
+                string sqlStr = "Select TenNhomSP as 'Nhóm món', MaSP as 'Mã món', TenSP as 'Tên món', DonGia as 'Giá', TinhTrang as 'Tình trạng' From v_dmSanPham";
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(dt);
