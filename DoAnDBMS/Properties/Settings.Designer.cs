@@ -25,8 +25,8 @@ namespace DoAnDBMS.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=lucas\\LOCTHANH;Initial Catalog=DoAnDBMS;Integrated Security=True;Encr" +
-            "ypt=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-DMP7HI8V;Initial Catalog=master;Integrated Security=True;Encry" +
+            "pt=False")]
         public string connStr {
             get {
                 return ((string)(this["connStr"]));

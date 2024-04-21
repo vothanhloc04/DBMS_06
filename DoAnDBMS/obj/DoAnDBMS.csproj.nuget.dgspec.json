@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\Năm 2\\HK 2\\Hệ quản trị cơ sở dữ liệu\\Đồ án\\DoAnDBMS\\DoAnDBMS\\DoAnDBMS.csproj": {}
+    "D:\\DBMS\\DBMS_06\\DoAnDBMS\\DoAnDBMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\Năm 2\\HK 2\\Hệ quản trị cơ sở dữ liệu\\Đồ án\\DoAnDBMS\\DoAnDBMS\\DoAnDBMS.csproj": {
+    "D:\\DBMS\\DBMS_06\\DoAnDBMS\\DoAnDBMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\Năm 2\\HK 2\\Hệ quản trị cơ sở dữ liệu\\Đồ án\\DoAnDBMS\\DoAnDBMS\\DoAnDBMS.csproj",
+        "projectUniqueName": "D:\\DBMS\\DBMS_06\\DoAnDBMS\\DoAnDBMS.csproj",
         "projectName": "DoAnDBMS",
-        "projectPath": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\Năm 2\\HK 2\\Hệ quản trị cơ sở dữ liệu\\Đồ án\\DoAnDBMS\\DoAnDBMS\\DoAnDBMS.csproj",
-        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thanh\\OneDrive\\Desktop\\UTE\\Năm 2\\HK 2\\Hệ quản trị cơ sở dữ liệu\\Đồ án\\DoAnDBMS\\DoAnDBMS\\obj\\",
+        "projectPath": "D:\\DBMS\\DBMS_06\\DoAnDBMS\\DoAnDBMS.csproj",
+        "packagesPath": "C:\\Users\\NGUYEN VAN KHANH\\.nuget\\packages\\",
+        "outputPath": "D:\\DBMS\\DBMS_06\\DoAnDBMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\NGUYEN VAN KHANH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +61,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

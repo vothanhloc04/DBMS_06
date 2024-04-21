@@ -19,6 +19,8 @@ namespace DoAnDBMS
         private void btnViewCLV_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = db.dmCaLamViec();
+            View_CaLamViec f1 = new View_CaLamViec();
+            f1.Show();
         }
 
         private void btnViewSP_Click(object sender, EventArgs e)
@@ -71,6 +73,36 @@ namespace DoAnDBMS
         {
             FTest fTest = new FTest();
             fTest.ShowDialog();
+        }
+
+        private void btnProfit_Click(object sender, EventArgs e)
+        {
+            FDoanhThu f = new FDoanhThu();
+            f.ShowDialog();
+        }
+
+        private void btnChiPhi_Click(object sender, EventArgs e)
+        {
+            FChiPhi f = new FChiPhi();
+            f.ShowDialog();
+        }
+
+        private void btnThemPhieuChi_Click(object sender, EventArgs e)
+        {
+            FThemPhieuChi f = new FThemPhieuChi();
+            f.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FThemCaLam f = new FThemCaLam();
+            f.Show();
+        }
+
+        private void btnCaLam_Click(object sender, EventArgs e)
+        {
+            FThemCaLam f = new FThemCaLam();
+            f.Show();
         }
     }
 }

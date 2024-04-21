@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="connStr" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=lucas\LOCTHANH;Initial Catalog=DoAnDBMS;Integrated Security=True;Encrypt=False</Value>
+      <Value Profile="(Default)">Data Source=LAPTOP-DMP7HI8V;Initial Catalog=master;Integrated Security=True;Encrypt=False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

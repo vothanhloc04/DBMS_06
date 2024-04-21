@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="FChiPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -8,6 +14,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FTestMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FThemCaLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FThemPhieuChi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MenuSP.cs">
@@ -21,6 +33,9 @@
     </Compile>
     <Compile Update="UCAddSP.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View_CaLamViec.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>
