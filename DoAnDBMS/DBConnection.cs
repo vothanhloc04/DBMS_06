@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -202,6 +202,295 @@ namespace DoAnDBMS
             }
 
             return dt;
+        }
+
+        //3.1
+        public string TimKiemKhachHang(string SDT)
+        {
+            string? TenKH = null;
+
+            try
+            {
+                conn.Open();
+                string sqlStr = "SELECT TenKH FROM KhachHang WHERE SDT = @SDT";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                cmd.Parameters.AddWithValue("@SDT", SDT);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+                        TenKH = reader.GetString(0);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return TenKH;
+        }
+
+        //3.2
+        public void ThemMoiKhachHang(string MaKH, string TenKH, string SDT)
+        {
+            try
+            {
+                conn.Open();
+
+                // Check if SDT already exists in KhachHang table
+                string checkSDTExistsSql = "SELECT COUNT(*) FROM KhachHang WHERE SDT = @SDT";
+                SqlCommand checkSDTExistsCmd = new SqlCommand(checkSDTExistsSql, conn);
+                checkSDTExistsCmd.Parameters.AddWithValue("@SDT", SDT);
+
+                int sdtCount = (int)checkSDTExistsCmd.ExecuteScalar();
+
+                if (sdtCount > 0)
+                {
+                    MessageBox.Show("So dien thoai da ton tai");
+                    return;
+                }
+
+                // Insert new customer if SDT doesn't exist
+                string insertCustomerSql = "INSERT INTO KhachHang (MaKH, TenKH, SDT, DiemTV) VALUES (@MaKH, @TenKH, @SDT, 0)";
+                SqlCommand insertCustomerCmd = new SqlCommand(insertCustomerSql, conn);
+                insertCustomerCmd.Parameters.AddWithValue("@MaKH", MaKH);
+                insertCustomerCmd.Parameters.AddWithValue("@TenKH", TenKH);
+                insertCustomerCmd.Parameters.AddWithValue("@SDT", SDT);
+
+                if (insertCustomerCmd.ExecuteNonQuery() > 0)
+                {
+                    MessageBox.Show("Them khach hang thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("Them khach hang that bai");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        //4.1
+        //Tim theo MaNV
+        public DataTable TimNhanVienTheoMa(string MaNV)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                string sqlStr = "EXEC dbo.pro_SearchByMaNV @MaNV";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                cmd.Parameters.AddWithValue("@MaNV", MaNV);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        //Tim theo SDT
+        public DataTable TimNhanVienTheoSDT(string SDT)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                string sqlStr = "EXEC dbo.pro_SearchBySDT @SDT";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                cmd.Parameters.AddWithValue("@SDT", SDT);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        //Tim theo Ten
+        public DataTable TimNhanVienTheoTen(string TenNV)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                string sqlStr = "EXEC dbo.pro_SearchByTenNV @TenNV";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                cmd.Parameters.AddWithValue("@TenNV", TenNV);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+        //Tim theo TenCV
+        public DataTable TimNhanVienTheoChucVu(string TenCV)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                string sqlStr = "SELECT nv.HoTen, nv.TenCV, cv.MoTa FROM NhanVien nv INNER JOIN CongViec cv ON nv.MaCV = cv.MaCV WHERE cv.TenCV = @TenCV";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                cmd.Parameters.AddWithValue("@TenCV", TenCV);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+
+        //4.2
+        public void ThemNhanVien(string MaNV, string HoTen, DateTime NgaySinh, string GioiTinh, string DiaChi, string SDT, string MaCV, int Thuong, DateTime NgayBatDauLam, byte[] HinhAnh)
+        {
+            try
+            {
+                conn.Open();
+
+                string sqlStr = "EXEC ThemNhanVien @MaNV, @HoTen, @NgaySinh, @GioiTinh, @DiaChi, @SDT, @MaCV, @Thuong, @NgayBatDauLam, @HinhAnh";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+
+                cmd.Parameters.AddWithValue("@MaNV", MaNV);
+                cmd.Parameters.AddWithValue("@HoTen", HoTen);
+                cmd.Parameters.AddWithValue("@NgaySinh", NgaySinh);
+                cmd.Parameters.AddWithValue("@GioiTinh", GioiTinh);
+                cmd.Parameters.AddWithValue("@DiaChi", DiaChi);
+                cmd.Parameters.AddWithValue("@SDT", SDT);
+                cmd.Parameters.AddWithValue("@MaCV", MaCV);
+                cmd.Parameters.AddWithValue("@Thuong", Thuong);
+                cmd.Parameters.AddWithValue("@NgayBatDauLam", NgayBatDauLam);
+                cmd.Parameters.AddWithValue("@HinhAnh", HinhAnh);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm nhân viên thành công!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        //4.3
+        public bool XoaNhanVien(int MaNV)
+        {
+            bool result = false;
+            try
+            {
+                conn.Open();
+
+                string sqlStr = "EXEC XoaNhanVien @MaNV";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                cmd.Parameters.AddWithValue("@MaNV", MaNV);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                result = rowsAffected > 0; // Check if any rows were affected
+
+                if (result)
+                {
+                    MessageBox.Show("Xoa nhan vien thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("Xoa nhan vien that bai");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return result;
+        }
+
+        //4.4
+        public bool SuaThongTinNhanVien(string MaNV, string HoTen, DateTime NgaySinh, string GioiTinh, string DiaChi, string SDT, string MaCV, int Thuong, DateTime NgayBatDauLam, byte[] HinhAnh)
+        {
+            bool result = false;
+            try
+            {
+                conn.Open();
+
+                string sqlStr = "EXEC SuaThongTinNhanVien @MaNV, @HoTen, @NgaySinh, @GioiTinh, @DiaChi, @SDT, @MaCV, @Thuong, @NgayBatDauLam, @HinhAnh";
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+
+                cmd.Parameters.AddWithValue("@MaNV", MaNV);
+                cmd.Parameters.AddWithValue("@HoTen", HoTen);
+                cmd.Parameters.AddWithValue("@NgaySinh", NgaySinh);
+                cmd.Parameters.AddWithValue("@GioiTinh", GioiTinh);
+                cmd.Parameters.AddWithValue("@DiaChi", DiaChi);
+                cmd.Parameters.AddWithValue("@SDT", SDT);
+                cmd.Parameters.AddWithValue("@MaCV", MaCV);
+                cmd.Parameters.AddWithValue("@Thuong", Thuong);
+                cmd.Parameters.AddWithValue("@NgayBatDauLam", NgayBatDauLam);
+                cmd.Parameters.AddWithValue("@HinhAnh", HinhAnh);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                result = rowsAffected > 0; // Check if any rows were affected
+
+                if (result)
+                {
+                    MessageBox.Show("Sua thong tin nhan vien thanh cong");
+                }
+                else
+                {
+                    MessageBox.Show("Sua thong tin nhan vien that bai");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return result;
         }
 
         //6.1
