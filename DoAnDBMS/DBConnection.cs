@@ -660,5 +660,160 @@ namespace DoAnDBMS
             }
             return dt;
         }
+
+        // Tim hoa don
+        public DataTable TimHoaDon(DateTime ngay)
+        {
+            DataTable dt = new DataTable();
+
+            try
+            { 
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand("TimHoaDon", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Ngay", ngay);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+                
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi: " + ex.Message);
+            }
+
+            return dt;
+        }
+
+        // Thêm món ăn
+        public void ThemMonVaoBan(string maBan, string maSP, int soLuong)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("ThemMonVaoBan", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaBan", maBan);
+                cmd.Parameters.AddWithValue("@MaSP", maSP);
+                cmd.Parameters.AddWithValue("@SoLuong", soLuong);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Thêm món vào bàn thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm món vào bàn thất bại");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public DataTable ProdDetails()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                string sqlStr = string.Format("Select * From ChiTietDonHang");
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+
+        public DataTable ProdAppDetails()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                string sqlStr = string.Format("Select * From ChiTietDonHangUngDung");
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch
+            {
+                MessageBox.Show("Loi");
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+
+        // Xuat Hoa don
+
+        public DataTable XuatHoaDon(string maBan)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("XuatHoaDon", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaBan", maBan);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
+
+        public DataTable XuatHoaDonApp(string maDH)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("XuatHoaDonUngDung", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@MaDHUD", maDH);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
     }
 }

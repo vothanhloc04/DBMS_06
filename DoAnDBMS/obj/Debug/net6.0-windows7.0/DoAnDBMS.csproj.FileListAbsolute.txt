@@ -31,3 +31,36 @@ C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ 
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.FTest.resources
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.UCAddSP.resources
 C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.UCHomeNV.resources
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\DoAnDBMS.exe
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\DoAnDBMS.dll.config
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\DoAnDBMS.deps.json
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\DoAnDBMS.runtimeconfig.json
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\DoAnDBMS.dll
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\DoAnDBMS.pdb
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\System.Data.SqlClient.dll
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\sni.dll
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\sni.dll
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\sni.dll
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CV\DBS\newone\DoAnDBMS\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.csproj.AssemblyReference.cache
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.Form1.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.FTest.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.FTestMenu.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.MenuSP.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.Product.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.Properties.Resources.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.UCAddSP.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.UCHomeNV.resources
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.csproj.GenerateResource.cache
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.GeneratedMSBuildEditorConfig.editorconfig
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.AssemblyInfoInputs.cache
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.AssemblyInfo.cs
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.csproj.CoreCompileInputs.cache
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.sourcelink.json
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.csproj.Up2Date
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.dll
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\refint\DoAnDBMS.dll
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.pdb
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\DoAnDBMS.genruntimeconfig.cache
+D:\CV\DBS\newone\DoAnDBMS\obj\Debug\net6.0-windows7.0\ref\DoAnDBMS.dll

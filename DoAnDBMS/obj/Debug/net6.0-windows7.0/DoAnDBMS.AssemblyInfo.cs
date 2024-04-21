@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoAnDBMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a88c3057467cdc84685c1d2549e83bd6ed59d48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0fd9067865a45824dea9b0ea1dd2a2db8059612")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoAnDBMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoAnDBMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

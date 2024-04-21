@@ -1,4 +1,4 @@
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 
 namespace DoAnDBMS
 {
@@ -6,6 +6,9 @@ namespace DoAnDBMS
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         DBConnection db = new DBConnection();
+
+        int count = 1;
+
         public Form1()
         {
             InitializeComponent();
@@ -71,6 +74,60 @@ namespace DoAnDBMS
         {
             FTest fTest = new FTest();
             fTest.ShowDialog();
+        }
+
+        private void btnSearchInvoice_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.TimHoaDon(dateTimePicker1.Value);
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            count += 1;
+            lblQuantity.Text = count.ToString();
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            if (count > 1)
+            {
+                count -= 1;
+            }
+            else
+            {
+                MessageBox.Show("Không thể giảm nữa");
+            }
+            lblQuantity.Text = count.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(count.ToString());
+        }
+
+        private void btnAddProd_Click(object sender, EventArgs e)
+        {
+            db.ThemMonVaoBan(txtTableID.Text, txtProdID.Text, count);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.ProdDetails();
+        }
+
+        private void btnExportInvoice_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.XuatHoaDon(txtTableID.Text);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.ProdAppDetails();
+        }
+
+        private void btnExptAppInvoice_Click(object sensder, EventArgs e)
+        {
+            dataGridView1.DataSource = db.XuatHoaDonApp(txtProdID.Text);
         }
     }
 }

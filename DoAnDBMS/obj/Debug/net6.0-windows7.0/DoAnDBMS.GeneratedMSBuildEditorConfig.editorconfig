@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DoAnDBMS
-build_property.ProjectDir = C:\Users\thanh\OneDrive\Desktop\UTE\Năm 2\HK 2\Hệ quản trị cơ sở dữ liệu\Đồ án\DoAnDBMS\DoAnDBMS\
+build_property.ProjectDir = D:\CV\DBS\newone\DoAnDBMS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
