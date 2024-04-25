@@ -354,7 +354,7 @@ namespace DoAnDBMS
             return dt;
         }
         //Tim theo TenCV
-        public DataTable TimNhanVienTheoChucVu(string TenCV)
+        public DataTable TimNhanVienTheoCongViec(string TenCV)
         {
             DataTable dt = new DataTable();
             try
